@@ -16,10 +16,16 @@
   </div>
 
   <div class="row">
-    <div class="col-md-2 nav-item li1"><a href="#">HOME</a></div>
-    <div class="col-md-2 nav-item li2"><a href="#">SCHEDULE</a></div>
-    <div class="col-md-3 nav-item li3"><a href="#">DOWNLOADABLE FORMS</a></div>
-    <div class="col-md-2 nav-item li4"><a href="#">GUIDELINES</a></div>
-    <div class="col-md-3 nav-item li5"><a href="#">UPLOAD FORMS</a></div>
+    <div class="col-md-2 nav-item li1"><%= link_to "HOME", root_path %></div>
+    <div class="col-md-2 nav-item li2"><%= link_to "SCHEDULE", schedule_path %></div>
+    <div class="col-md-3 nav-item li3">
+      <%= link_to "DOWNLOADABLE FORMS", downloadable_form_path %>
+    </div>
+    <div class="col-md-2 nav-item li4">
+      <%= link_to "GUIDELINES", guidelines_path %>
+    </div>
+    <div class="col-md-3 nav-item li5">
+      <%= link_to "UPLOAD FORMS", upload_forms_path %>
+    </div>
   </div>
 </div>
