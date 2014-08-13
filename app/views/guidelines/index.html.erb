@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-3">
+      <div class="sidebar">
+        <div class="list-group">
+            <%= link_to "<i class='fa'></i> SCHOOL".html_safe, guidelines_path(g: "School"), class: "list-group-item" %>
+          
+            <%= link_to "<i class='fa' ></i> AUXILIARIES".html_safe, guidelines_path(g: "Auxiliaries"), class: "list-group-item" %> 
+
+             <%= link_to "<i class='fa' ></i> CENTRAL SERVICES".html_safe, guidelines_path(g: "Central Services"), class: "list-group-item" %> 
+
+             <%= link_to "<i class='fa' ></i> OTHERS".html_safe, guidelines_path(g: "Others"), class: "list-group-item" %> 
+        </div>        
+    </div>
+ 
+  </div>
+
+  <div class="col-md-9">
+  <h1><%= @g %></h1>
+    <% @guidelines.each do |guideline| %>
+       <%= render partial: "pages/guidelines", locals: {guideline: guideline} %>
+    <% end %>
+  </div>
+
+
+</div>

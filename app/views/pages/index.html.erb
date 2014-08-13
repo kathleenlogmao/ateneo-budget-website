@@ -1,4 +1,6 @@
 <h1 class="ateneo_h1"><blink>ANNOUNCEMENT</blink></h1>
 <hr>
-  <%= render partial: "announcements/announcement" %>
+ <% @announcements.each do |announcement| %>
+  <%= render partial: "announcements/announcement", locals: {announcement: announcement } %>
+ <% end %>
 <hr>

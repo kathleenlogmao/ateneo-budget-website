@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+    <tr>
+	      <th>COLOR</th>
+	      <th>NAME</th>
+	      <th>DESCRIPTION</th>
+	      <th>ACTION</th>
+	    </tr>
+
+  <% a.each do |downloadable_form| %>
+	 
+	 
+	    <tr>
+	    	<td><%= downloadable_form.color %></td>
+	    	<td><%= downloadable_form.name %></td>
+	    	<td><%= downloadable_form.description %></td>
+	    	<td><%= link_to "Download", "#", class: "btn btn-success btn-xs" %></td>
+	    </tr>
+	
+  <% end %>
+    </table>
