@@ -1,9 +1,9 @@
 <div class="announcement">
     <div class="row"> 
       <div class="col-md-12">
-        <h3><%= announcement.title %></h3>
-        Date: <%= announcement.announced_at %> <br><br>
-        <p><%= announcement.content %></p> <br>
+        <h3 style="color: #236B8E"><%= announcement.title %></h3>
+        <%= announcement.announced_at.strftime('%A, %B %e, %Y')  %> <br><br>
+        <p><%= announcement.content.html_safe %></p> <br>
       <hr>
       </div>
     </div>

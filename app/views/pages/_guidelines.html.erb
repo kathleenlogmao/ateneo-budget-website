@@ -1,7 +1,7 @@
 <div class="guideline_container">
 <hr>
-  <h3><%= guideline.title %></h3>
-  Posted at: <%= guideline.posted_at %> <br> <br>
+  <h3 style="color: #236B8E;"><%= guideline.title %></h3>
+  <span style="color: #808080;">Posted at:</span> <%= guideline.posted_at.strftime('%A, %B %e, %Y') %> <br> <br>
    <p><%= guideline.content %></p>
  <hr>
 </div>
