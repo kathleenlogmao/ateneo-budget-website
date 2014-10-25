@@ -16,6 +16,7 @@ gem 'simple_form'
 gem 'jquery-minicolors-rails'
 gem 'therubyracer'
 gem 'rich', github: 'bastiaanterhorst/rich'
+gem 'rb-readline'
 
 group :doc do
   gem 'sdoc', require: false
