@@ -13,6 +13,7 @@ ActiveAdmin.register DownloadableForm do
 		column :color
 		column :description
     column :priority
+    column :special
 		actions defaults: true do |df|
       link_to "Download", df.file.url, target: "_blank"
     end
@@ -24,6 +25,7 @@ ActiveAdmin.register DownloadableForm do
 			f.input :color, input_html: {class: 'colorpicker'}
 			f.input :description
       f.input :priority
+      f.input :special
       f.input :file, as: :file
 		end
 
@@ -35,6 +37,8 @@ ActiveAdmin.register DownloadableForm do
 			row :name
 			row :color
 			row :description
+      row :priority
+      row :special
 		end
 	end
 end

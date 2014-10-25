@@ -1,4 +1,12 @@
-<h1 class="ateneo_h1">DOWNLOADABLE FORMS</h1>
-<hr>
- <%= render partial: "downloadable_forms/downloadable_form", locals: {a: @downloadable_forms} %>
+<h1 class="ateneo_h1">DOWNLOADABLE FORMS <br><small>Click title of form to download.</small></h1>
+  <div class="row">
+    <div class="col-md-6">
+      <center><h2>SY 2015-2016</h2></center>
+      <%= render partial: "downloadable_forms/downloadable_form", locals: {a: @downloadable_forms} %>
+    </div>
+    <div class="col-md-6">
+      <center><h2>Special</h2></center>
+      <%= render partial: "downloadable_forms/downloadable_form_special", locals: {a: @downloadable_forms} %>
+    </div>
+  </div>
 <hr>

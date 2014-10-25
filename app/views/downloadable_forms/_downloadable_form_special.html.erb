@@ -5,13 +5,13 @@
     <th>DESCRIPTION</th>
   </tr>
   <% a.each do |downloadable_form| %>
-    <% if downloadable_form.special != true %>
+    <% if downloadable_form.special == true %>
       <tr>
-        <td style="background-color: <%= downloadable_form.color %>">
-        </td>
+        <td style="background-color: <%= downloadable_form.color %>"></td>
         <td><%= link_to downloadable_form.name, downloadable_form.file.url, target: "_blank" %></td>
         <td><%= downloadable_form.description %></td>
       </tr>
     <% end %>
   <% end %>
 </table>
+

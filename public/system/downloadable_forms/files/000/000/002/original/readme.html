@@ -1,0 +1,678 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>README</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+</head>
+<body>
+<h1>ATPMS Routing Server</h1>
+
+<h2>Building</h2>
+
+<p>To save a lot of grief, use Vagrant/VirtualBox.</p>
+
+<h3>Dependencies</h3>
+
+<p>TODO</p>
+
+<h2>Running</h2>
+
+<p>TODO</p>
+
+<h2><a name=parameter_types>Parameter Types</a></h2>
+
+<p>Though most parameter types are self-explanatory (int, string, array), some types, like location and time, could be represented in multiple ways. Below are the specific ways the router parses the types.</p>
+
+<h3><code>location</code></h3>
+
+<p>Locations are specified by <code>lon,lat</code> pair. For example: <code>121.0211389,14.5568321</code>.</p>
+
+<h3><code>time</code></h3>
+
+<p>Times can be specified by either UNIX timestamp (seconds since June 01, 1970), or date string (<code>%Y-%m-%dT%T</code> interpreted in the server&#39;s time zone). Examples:</p>
+
+<ul>
+<li>2014-06-01T05:00:01 </li>
+<li>2014-06-01T16:00:01</li>
+<li>1413455739</li>
+</ul>
+
+<h3><code>roads</code></h3>
+
+<p>There are multiple ways to specify the set of roads to return, depending on the query parameter key. Query parameters are in parethesis and should be dropped in the actual query.</p>
+
+<ul>
+<li><code>box=(lon_min),(lat_min),(lon_max),(lat_max)</code> — Gets all roads that intersects the box specified by the min and max bounds. Results are undefined if the values are flipped.</li>
+<li><code>id=(id0),(id1),(id2),...</code> — Gets all roads matching the specified edges. Returned results matches the order of the specified ids.</li>
+</ul>
+
+<h4>Examples</h4>
+
+<ul>
+<li><code>/roads?box=121.0265168,14.5532272,121.02784102,14.5534525</code></li>
+<li><code>/roads/histogram?box=121.0,14.5,121.3,14.6</code></li>
+<li><code>/roads?id=156613</code></li>
+<li><code>/roads?id=156613,156614</code></li>
+</ul>
+
+<h2>Commands</h2>
+
+<ul>
+<li><a href="#cmd_route">route</a></li>
+<li><a href="#cmd_save_bulk">save_bulk</a></li>
+<li><a href="#cmd_roads">roads</a></li>
+<li><a href="#cmd_roads_histogram">roads/histogram</a></li>
+<li><a href="#cmd_roads_graph">roads/graph</a></li>
+</ul>
+
+<p>All GET requests support gzip encoding. To enable it, send <code>Accept-Encoding: gzip</code> to the header. All return values are formatted as <code>application/json</code> objects. If the query results in an error, the returned object will contain an <code>error</code> field stating the reason of the problem. HTTP status codes are not used.</p>
+
+<p>Unless stated, all parameters listed are required.</p>
+
+<h3><a name=cmd_route><code>/route</code></a></h3>
+
+<p>Computes <code>k</code> routes from <code>src</code> to <code>dst</code> assuming road conditions at time <code>t</code>.</p>
+
+<h4>Parameters (GET)</h4>
+
+<ul>
+<li><code>src</code> location — Source location, will get snapped to the nearest node.</li>
+<li><code>dst</code> location — Destination location, will also get snapped to the nearest node.</li>
+<li><code>k</code> uint (default: 1) — Number of paths to generate.</li>
+<li><code>t</code> time (optional) — If <em>not</em> specified, it will route based on the current situation (faster). If a time is specified, it will route based on <em>predicted</em> road situations which can be up to 40x slower.</li>
+</ul>
+
+<h4>Return Value</h4>
+
+<pre><code>{
+    &quot;paths&quot;: [
+        {
+            &quot;eta&quot;: float (hours),
+            &quot;distance&quot;: float (kilometers),
+            &quot;nodes&quot;: [{&quot;lon&quot;: float, &quot;lat&quot;: float}]
+        }
+    ]
+}
+</code></pre>
+
+<p><code>paths</code> is an array whose length is ≤ <code>k</code>. A path is an array of points. <code>eta</code> is the estimated time of arrival.</p>
+
+<h4>Examples</h4>
+
+<p><code>/route?src=121.0265168,14.5532272&amp;dst=121.0274102,14.5524524</code> ⇒</p>
+
+<pre><code>{
+    &quot;paths&quot;: [
+        {
+            &quot;eta&quot;: 0.001983315917,
+            &quot;distance&quot;: 0.1289155334,
+            &quot;nodes&quot;: [
+                {
+                    &quot;lon&quot;: 121.0265168,
+                    &quot;lat&quot;: 14.5532272
+                },
+                {
+                    &quot;lon&quot;: 121.0274102,
+                    &quot;lat&quot;: 14.5524524
+                }
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<p><code>/route?src=121.0265168,14.5532272&amp;dst=121.0274102,14.5544524&amp;k=2&amp;t=2014-11-01T12:01:00</code></p>
+
+<h3><a name=cmd_save_bulk><code>/api/locationlogs/save_bulk</code></a></h3>
+
+<p>Logs vehicle location and updates internal speed measures.</p>
+
+<h4>Parameters (POST)</h4>
+
+<pre><code>{
+    &quot;locationlogs&quot;: [
+        {
+            &quot;lon&quot;: float,
+            &quot;lat&quot;: float,
+            &quot;user_id&quot;: uint,
+            &quot;timestamp&quot;: uint64 (UNIX timestamp)
+        }
+    ]
+}
+</code></pre>
+
+<p>There are two ways the input can be sent:</p>
+
+<ul>
+<li>URL form-encoded: Put the JSON string as the value of the <code>locationlogs</code> key in a <code>application/x-www-form-urlencoded</code> request. Legacy protocol to ease in transitioning. </li>
+<li>Direct: Simply put the JSON string in the body and set the content type to <code>application/json</code>.</li>
+</ul>
+
+<h4>Return Value</h4>
+
+<p>The return value is an empty object(<code>{}</code>) for success.</p>
+
+<h4>Examples</h4>
+
+<h3><a name=cmd_roads><code>/roads</code></a></h3>
+
+<p>Returns road conditions at time <code>t</code>.</p>
+
+<h4>Parameters (GET)</h4>
+
+<ul>
+<li>roads — Specifies the roads. See <a href="#parameter_types">Parameter Types</a></li>
+<li><code>t</code> time (optional) — If <em>not</em> specified, gets the conditions based on the current situation. If specified, get the conditions based on the <em>predicted</em> situation at time <code>t</code>.</li>
+</ul>
+
+<h4>Return Value</h4>
+
+<pre><code>{
+    &quot;roads&quot;: [
+        {
+            &quot;id&quot; : uint64,
+            &quot;dst&quot; : location,
+            &quot;src&quot; : location,
+            &quot;length&quot; : float (kilometers),
+            &quot;name&quot; : string,
+            &quot;default_speed&quot; : float (kilometers per hour),
+            &quot;speed&quot; : float (kph),
+            &quot;v&quot; : float
+        }
+    ]
+}
+</code></pre>
+
+<ul>
+<li><code>v</code> is the variance.</li>
+<li>If not enough data is gathered at the time specified, the variances(<code>v</code>) will be <code>null</code>.</li>
+<li>If the time is not specified, the variances(<code>v</code>) are negative.</li>
+<li><code>default_speed</code> is the speed assignment of the road&#39;s type, independent of any situation that might arise.</li>
+<li><code>speed</code> is based on measurements of car speeds on the road.</li>
+</ul>
+
+<h4>Examples</h4>
+
+<p><code>/roads?box=121.0265168,14.5532272,121.02784102,14.5534525</code> ⇒</p>
+
+<pre><code>{
+    &quot;roads&quot;: [
+        {
+            &quot;default_speed&quot; : 65.0,
+            &quot;dst&quot; : &quot;121.027,14.5525&quot;,
+            &quot;id&quot; : 156613,
+            &quot;length&quot; : 0.1289155334234238,
+            &quot;name&quot; : &quot;Ayala Avenue&quot;,
+            &quot;speed&quot; : 64.04637145996094,
+            &quot;src&quot; : &quot;121.027,14.5532&quot;,
+            &quot;v&quot; : null
+        },
+        {
+            &quot;default_speed&quot; : 65.0,
+            &quot;dst&quot; : &quot;121.026,14.5533&quot;,
+            &quot;id&quot; : 156614,
+            &quot;length&quot; : 0.01809836551547050,
+            &quot;name&quot; : &quot;Ayala Avenue&quot;,
+            &quot;speed&quot; : 43.93569183349609,   
+            &quot;src&quot; : &quot;121.027,14.5532&quot;,
+            &quot;v&quot; : null
+        }
+    ]
+}
+</code></pre>
+
+<p><code>/roads?id=156613,156614&amp;t=2014-10-19T01:01:00</code> ⇒</p>
+
+<pre><code>{
+    &quot;roads&quot;: [
+        {
+            &quot;default_speed&quot; : 65.0,
+            &quot;dst&quot; : &quot;121.027,14.5525&quot;,
+            &quot;id&quot; : 156613,
+            &quot;length&quot; : 0.1289155334234238,
+            &quot;name&quot; : &quot;Ayala Avenue&quot;, 
+            &quot;speed&quot; : 11.52421188354492,
+            &quot;src&quot; : &quot;121.027,14.5532&quot;,
+            &quot;v&quot; : 3481.633544921875
+        },
+        {
+            &quot;default_speed&quot; : 65.0, 
+            &quot;dst&quot; : &quot;121.026,14.5533&quot;,
+            &quot;id&quot; : 156614,
+            &quot;length&quot; : 0.01809836551547050,
+            &quot;name&quot; : &quot;Ayala Avenue&quot;,
+            &quot;speed&quot; : 10.08790493011475,
+            &quot;src&quot; : &quot;121.027,14.5532&quot;,   
+            &quot;v&quot; : 3040.665771484375
+        }
+    ]
+}
+</code></pre>
+
+<h3><a name=cmd_roads_histogram><code>/roads/histogram</code></a></h3>
+
+<p>Returns histogram of road speeds at time <code>t</code>.</p>
+
+<h4>Parameters (GET)</h4>
+
+<ul>
+<li>roads — Specifies the roads. See <a href="#parameter_types">Parameter Types</a></li>
+<li><code>t</code> time (default: now)</li>
+</ul>
+
+<h4>Return Value</h4>
+
+<pre><code>{
+    &quot;interval&quot; : float (kph),
+    &quot;roads&quot; : 
+    [
+        {
+            &quot;id&quot; : uint64,
+            &quot;src&quot; : location,
+            &quot;dst&quot; : location,
+            &quot;h&quot; : 
+            [
+                {
+                    &quot;n&quot; : uint64,
+                    &quot;mean&quot; : float,
+                    &quot;v&quot; : float
+                }
+            ],
+        }
+    ]
+}
+</code></pre>
+
+<ul>
+<li><code>v</code> is the variance.</li>
+<li>If there&#39;s not enough data, the variance(<code>v</code>) will be <code>null</code> (not a number).</li>
+<li><code>interval</code> refers to bin width. For example, if interval is 11, then the bin divisions are: [0,11), [11,22), [22, 33), ...</li>
+</ul>
+
+<h4>Examples</h4>
+
+<p><code>/roads/histogram?id=156613&amp;t=2014-10-19T01:01:00</code> ⇒</p>
+
+<pre><code>{
+    &quot;interval&quot; : 13.0,
+    &quot;roads&quot; : 
+    [
+        {
+            &quot;id&quot; : 156613,
+            &quot;src&quot; : &quot;121.027,14.5532&quot;,
+            &quot;dst&quot; : &quot;121.027,14.5525&quot;,
+            &quot;h&quot; : 
+            [   
+                    { &quot;n&quot; : 0, &quot;mean&quot; : 0.0, &quot;v&quot; : null },
+                    { &quot;n&quot; : 0, &quot;mean&quot; : 0.0, &quot;v&quot; : null },
+                    { &quot;n&quot; : 0, &quot;mean&quot; : 0.0, &quot;v&quot; : null },
+                    { &quot;n&quot; : 1, &quot;mean&quot; : 51.12765884399414, &quot;v&quot; : 0.0 },
+                    { &quot;n&quot; : 28, &quot;mean&quot; : 59.64380264282227, &quot;v&quot; : 10.11286067962646 },
+                    { &quot;n&quot; : 2, &quot;mean&quot; : 69.07751464843750, &quot;v&quot; : 0.1725567877292633 },
+                    { &quot;n&quot; : 0, &quot;mean&quot; : 0.0, &quot;v&quot; : null },
+                    { &quot;n&quot; : 0, &quot;mean&quot; : 0.0, &quot;v&quot; : null },
+                    { &quot;n&quot; : 0, &quot;mean&quot; : 0.0, &quot;v&quot; : null },
+                    { &quot;n&quot; : 0, &quot;mean&quot; : 0.0, &quot;v&quot; : null }
+            ]
+        }
+    ]
+}
+</code></pre>
+
+<h3><a name=cmd_roads_graph><code>/roads/graph</code></a></h3>
+
+<p>Returns the speed graph of road speeds from time <code>from</code> to time <code>to</code>.</p>
+
+<h4>Parameters (GET)</h4>
+
+<ul>
+<li>roads — Specifies the roads. See <a href="#parameter_types">Parameter Types</a></li>
+<li><code>from</code> time — The time to start the spped graph.</li>
+<li><code>to</code> time — The time to end the speed graph.</li>
+</ul>
+
+<h4>Return Value</h4>
+
+<pre><code>[
+    &quot;id&quot;: uint64,
+    &quot;src&quot;: location
+    &quot;dst&quot;: location,
+    &quot;speed_graph&quot;: [
+        {
+            &quot;speed&quot;: float,
+            &quot;v&quot;: float
+        }
+    ]
+]
+</code></pre>
+
+<ul>
+<li><code>v</code> is the variance.</li>
+<li>The variance is <code>null</code> if no data is present to show speed at that time.</li>
+<li>Each element in the speed graph covers a 15-minute interval (the smallest bin in the prediction model).</li>
+</ul>
+
+<h4>Examples</h4>
+
+<p><code>/roads/graph?id=156613&amp;from=2014-10-19T01:01:00&amp;to=2014-10-19T02:01:00</code> ⇒</p>
+
+<pre><code>[
+    {
+        &quot;id&quot; : 156613,
+        &quot;src&quot; : &quot;121.027,14.5532&quot;,
+        &quot;dst&quot; : &quot;121.027,14.5525&quot;,
+        &quot;speed_graph&quot; : 
+        [           
+            { &quot;speed&quot; : 56.68364715576172, &quot;v&quot; : 55.65146255493164 },
+            { &quot;speed&quot; : 55.68096923828125, &quot;v&quot; : 61.12436294555664 },
+            { &quot;speed&quot; : 57.05392074584961, &quot;v&quot; : 58.78678512573242 },
+            { &quot;speed&quot; : 55.37619400024414, &quot;v&quot; : 70.73380279541016 },
+            { &quot;speed&quot; : 56.68364715576172, &quot;v&quot; : 55.65146255493164 }
+        ]
+    }
+]
+</code></pre>
+
+
+</body>
+
+</html>
