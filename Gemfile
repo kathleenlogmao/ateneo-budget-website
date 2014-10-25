@@ -14,6 +14,7 @@ gem 'devise'
 gem 'paperclip'
 gem 'simple_form'
 gem 'jquery-minicolors-rails'
+gem 'therubyracer'
 
 group :doc do
   gem 'sdoc', require: false
