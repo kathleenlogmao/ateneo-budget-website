@@ -3,7 +3,8 @@ class UploadedForm < ActiveRecord::Base
   validates :unit, presence: true
 
   has_attached_file :file
-  validates_attachment :file, presence: true, size: { in: 0.megabytes..2.megabytes }, :if => :file_attached?
+  validates_attachment_file_name :file, :matches => [/doc\Z/, /xlsx?g\Z/, /xls\Z/, /docx\Z/]
+  validates_attachment_content_type :file, :content_type => %w(application/xml application/vnd.ms-excel application/vnd.openxmlformats-officedocument.spreadsheetml.sheet)
 
   def file_attached?
     self.file.file?
