@@ -23,7 +23,7 @@ ActiveAdmin.register Guideline do
 			f.input :posted_at, as: :datepicker
       f.input :special
 			f.input :guideline_type, as: :select, collection: ["School", "Auxiliaries", "Central Services", "Others"]
-			f.input :content, as: :rich, config: { width: "100%", height: "400px" }
+			f.input :content, as: :html_editor
 		end	
 
 		f.actions

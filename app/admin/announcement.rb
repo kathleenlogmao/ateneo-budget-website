@@ -14,7 +14,7 @@ ActiveAdmin.register Announcement do
 		f.inputs "Details" do
 			f.input :title
 			f.input :announced_at, as: :datepicker
-			f.input :content, as: :rich, config: { width: "100%", height: "400px" }
+			f.input :content, as: :html_editor
 		end
 		f.actions
 	end
