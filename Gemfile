@@ -15,6 +15,7 @@ gem 'paperclip'
 gem 'simple_form'
 gem 'jquery-minicolors-rails'
 gem 'therubyracer'
+gem 'rich', github: 'bastiaanterhorst/rich'
 
 group :doc do
   gem 'sdoc', require: false

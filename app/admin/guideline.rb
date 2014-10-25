@@ -1,5 +1,9 @@
 ActiveAdmin.register Guideline do 
-	permit_params :title, :content, :posted_at, :guideline_type 
+  controller do
+    def permitted_params
+      params.permit!
+    end
+  end
 
 	filter :title
 	filter :posted_at
@@ -9,16 +13,17 @@ ActiveAdmin.register Guideline do
 		column :title
 		column :posted_at
 		column :guideline_type
-
+    column :special
 		actions
 	end
 
 	form do |f|
 		f.inputs "Details" do
 			f.input :title
-			f.input :content
+			f.input :posted_at, as: :datepicker
+      f.input :special
 			f.input :guideline_type, as: :select, collection: ["School", "Auxiliaries", "Central Services", "Others"]
-			f.input :posted_at
+			f.input :content, as: :rich, config: { width: "100%", height: "400px" }
 		end	
 
 		f.actions

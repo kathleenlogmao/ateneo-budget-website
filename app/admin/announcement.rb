@@ -8,14 +8,13 @@ ActiveAdmin.register Announcement do
 		column :title
 		column :announced_at
 		actions
-
 	end
 
 	form do |f|
 		f.inputs "Details" do
 			f.input :title
-			f.input :announced_at
-			f.input :content
+			f.input :announced_at, as: :datepicker
+			f.input :content, as: :rich, config: { width: "100%", height: "400px" }
 		end
 		f.actions
 	end

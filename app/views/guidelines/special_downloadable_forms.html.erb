@@ -1,0 +1,34 @@
+<h2>Guidelines <small>April to May 2015</small></h2>
+<div class="row">
+  <div class="col-md-3">
+      <div class="sidebar">
+        <div class="list-group">
+          <%= link_to "<i class='fa'></i> SCHOOL".html_safe, special_guidelines_path(g: "School"), class: "list-group-item" %>
+          <%= link_to "<i class='fa' ></i> AUXILIARIES".html_safe, special_guidelines_path(g: "Auxiliaries"), class: "list-group-item" %> 
+          <%= link_to "<i class='fa' ></i> CENTRAL SERVICES".html_safe, special_guidelines_path(g: "Central Services"), class: "list-group-item" %> 
+          <%= link_to "<i class='fa' ></i> OTHERS".html_safe, special_guidelines_path(g: "Others"), class: "list-group-item" %> 
+          <%= link_to "<i class='fa' ></i> DOWNLOADABLE FORMS".html_safe, special_downloadable_forms_path, class: "list-group-item" %> 
+        </div>        
+     </div>
+  </div>
+  <div class="col-md-9">
+    <h2>Downloadable Forms <small>April to May 2015</small></h2>
+      <table class="table table-bordered">
+        <tr>
+          <th>COLOR</th>
+          <th>NAME</th>
+          <th>DESCRIPTION</th>
+        </tr>
+        <% @downloadable_forms.each do |downloadable_form| %>
+          <% if downloadable_form.special == true %>
+            <tr>
+              <td style="background-color: <%= downloadable_form.color %>"></td>
+              <td><%= link_to downloadable_form.name, downloadable_form.file.url, target: "_blank" %></td>
+              <td><%= downloadable_form.description %></td>
+            </tr>
+          <% end %>
+        <% end %>
+      </table>
+  </div>
+</div>
+

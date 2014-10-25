@@ -17,14 +17,17 @@
   <div class="row">
     <div class="col-md-2 nav-item li1"><%= link_to "HOME", root_path %></div>
     <div class="col-md-2 nav-item li2"><%= link_to "SCHEDULE", schedule_path %></div>
-    <div class="col-md-3 nav-item li3">
-      <%= link_to "DOWNLOADABLE FORMS", downloadable_forms_path %>
+    <div class="col-md-2 nav-item li3">
+      <%= link_to "FORMS", downloadable_forms_path %>
     </div>
     <div class="col-md-2 nav-item li4">
       <%= link_to "GUIDELINES", guidelines_path %>
     </div>
-    <div class="col-md-3 nav-item li5">
-      <%= link_to "UPLOAD FORMS", new_uploaded_form_path %>
+    <div class="col-md-2 nav-item li3">
+      <%= link_to "GUIDELINES <br><small>(April to May 2015)</small>".html_safe, special_guidelines_path %>
+    </div>
+    <div class="col-md-2 nav-item li5">
+      <%= link_to "UPLOAD FORM", new_uploaded_form_path %>
     </div>
   </div>
 </div>
