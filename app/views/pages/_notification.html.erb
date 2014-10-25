@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-md-12">
+    <div id="notification">
+      <% flash.each do |name, msg| %>
+        <% if msg.is_a?(String) %>
+          <div class="bs-callout bs-callout-<%= name %>">
+            <%= msg %>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  </div>
+</div>

@@ -4,7 +4,8 @@ AteneoBudgetWebsite::Application.routes.draw do
   root to: "pages#index" 
 
   get "/schedule", to: "pages#schedule"
-  get "/downloadable_form", to: "downloadable_forms#index", as: :downloadable_form
+  get "/downloadable_forms", to: "downloadable_forms#index", as: :downloadable_forms
   get "/guidelines", to: "guidelines#index", as: :guidelines
-  get "/upload_forms", to: "pages#upload_forms"
+
+  resources :uploaded_forms, only: [:new, :create]
 end

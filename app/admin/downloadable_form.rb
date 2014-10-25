@@ -1,5 +1,9 @@
 ActiveAdmin.register DownloadableForm do 
-	permit_params :name, :color, :description
+  controller do
+    def permitted_params
+      params.permit!
+    end
+  end
 
 	filter :name
 	filter :color
@@ -8,8 +12,10 @@ ActiveAdmin.register DownloadableForm do
 		column :name
 		column :color
 		column :description
-
-		actions
+    column :priority
+		actions defaults: true do |df|
+      link_to "Download", df.file.url, target: "_blank"
+    end
 	end
 
 	form do |f|
@@ -17,6 +23,8 @@ ActiveAdmin.register DownloadableForm do
 			f.input :name
 			f.input :color, input_html: {class: 'colorpicker'}
 			f.input :description
+      f.input :priority
+      f.input :file, as: :file
 		end
 
 		f.actions

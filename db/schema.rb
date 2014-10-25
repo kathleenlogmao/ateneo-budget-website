@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140813083710) do
+ActiveRecord::Schema.define(version: 20141010035400) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -60,6 +60,11 @@ ActiveRecord::Schema.define(version: 20140813083710) do
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "priority"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
   end
 
   create_table "guidelines", force: true do |t|
@@ -69,6 +74,17 @@ ActiveRecord::Schema.define(version: 20140813083710) do
     t.string   "guideline_type"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "uploaded_forms", force: true do |t|
+    t.string   "uploaded_by"
+    t.string   "unit"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
   end
 
 end
