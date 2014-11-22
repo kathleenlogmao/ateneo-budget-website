@@ -18,6 +18,8 @@
       <h2>For Auxiliaries</h2>
     <% elsif @g == "Central Services" %>
       <h2>For Central Service Units</h2>
+    <% else %>
+      <h2><%= @g %></h2>
     <% end %>
     <% @guidelines.each do |guideline| %>
       <% if guideline.special != true %>
