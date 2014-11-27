@@ -23,7 +23,9 @@ ActiveAdmin.register Announcement do
 		attributes_table do
 			row :title
 			row :announced_at
-			row :content
+			row :content do
+        ad.content.html_safe
+      end
 
 		end
 	end

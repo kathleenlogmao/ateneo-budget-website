@@ -33,7 +33,9 @@ ActiveAdmin.register Guideline do
 	show do |v|
 		attributes_table do
 			row :title
-			row :content
+			row :content do
+        v.content.html_safe
+      end
 			row :guideline_type
 			row :posted_at
 		end
